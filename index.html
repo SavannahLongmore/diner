@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>State File | A Front End Developer </title>
+    <meta name="description" content="Savannah Longmore's Sample Start File with SCSS">
+    <meta name="author" content="Savannah Longmore">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/favicon-96x96.png" alt="logo" width="40" height="40" class="logo">
+            <h1>Velombra</h1>
+        </header>
+    </div> 
+    <div id="navWrapper">
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Welcome</a></li>
+                <li><a href="#">Communities</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Floor Plans</a></li>
+                <li><a href="#">Homebuyer Guide</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mainWrapper">
+        <main>
+            <!--<picture class="hero">
+       <source media="(min-width: 300px) and (max-width: 699px)" srcset="images/hero-small.webp" 
+       <source media="(min-width: 700px) and (max-width: 1099px)" srcset="images/hero-medium.webp"
+       <source media="(min-width: 1100px) and (max-width: 1500px)" srcset="images/hero-large.webp"
+       <img src="images/hero-default.webp" alt="#" width="16" height="9">
+    </picture>-->
+    <!--
+            <h1>Learn</h1>
+            <div class="allcards">
+              <section>
+                <h2>HTML</h2>
+                <img src="images/skill-html.webp" alt="html" width="300" height="175">
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+                
+              <section>
+                <h2>CSS</h2>
+                <img src="images/skill-css.webp" alt="html" width="300" height="175" class="e2e">
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+              
+              <section>
+                <h2>JAVASCRIPT</h2>
+                <img src="images/skill-javascript.webp" alt="html" width="300" height="175" >
+                <h2>JAVASCRIPT</h2>
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+
+              <section>
+                <img src="images/rsponsive.webp" alt="html" width="300" height="175" class="e2e">
+                <h2>Responsive Design</h2>
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+
+              <section>
+                <img src="images/skill-sass.webp" alt="html" width="300" height="175">
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+                -->
+   <picture class="hero">
+
+  <source media="(max-width: 700px)" srcset="images/restaurant_hero_small.webp">
+
+  <source media="(max-width: 1100px)" srcset="images/restaurant_hero_medium.webp">
+
+  <img src="images/restaurant_hero.webp"
+       alt="restarunt"
+       loading="eager" fetchpriority="high">
+
+</picture>
+            <h1>Signature Creations</h1>
+            <section class="intro">
+  <p>
+    Each creation at Velombra is thoughtfully prepared to awaken the senses. 
+    From delicate textures to rich, slow-crafted flavors, every plate is designed to be experienced — not just tasted.
+  </p>
+</section>
+</main>
+<!-----------------------------------------------------
+                 This is where the carousel starts
+------------------------------------------------------->
+<section class="carouselWrap">
+<div class="carousel3">
+  <button class="arrow left" data-dir="-1">&#10094;</button>
+
+  <div class="track">
+
+    <section class="slide">
+      <img src="images/dinerfood_1.webp" alt="Carbonara" loading="lazy">
+      <div class="cardContent">
+        <h3>Carbonara</h3>
+        <p>Classic Roman pasta with egg, pecorino cheese, and guanciale.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_10.webp" alt="Saffron Risotto" loading="lazy">
+      <div class="cardContent">
+        <h3>Saffron Risotto</h3>
+        <p>Creamy Milanese risotto finished with parmesan.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_9.webp" alt="Margherita Pizza" loading="lazy">
+      <div class="cardContent">
+        <h3>Margherita Pizza</h3>
+        <p>Wood-fired pizza with tomato, mozzarella, and fresh basil.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_6.webp" alt="Pasta Dish" loading="lazy">
+      <div class="cardContent">
+        <h3>House Pasta</h3>
+        <p>Fresh pasta served with a seasonal chef’s sauce.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_5.webp" alt="Pizza Close-up" loading="lazy">
+      <div class="cardContent">
+        <h3>Signature Pizza</h3>
+        <p>Hand-stretched dough, slow-simmered sauce, fresh herbs.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+  </div>
+
+   <button class="arrow right" data-dir="1">&#10095;</button>
+</div>
+</section>
+<!-----------------------------------------------------
+                 This is where the carousel ends
+------------------------------------------------------->
+
+<!-----------------------------------------------------
+          split screen starts
+------------------------------------------------------->
+<section class="featureSplit">
+
+  <div class="featureImage">
+  <img src="images/booknow.webp" alt="Private dining" loading="lazy">
+
+  <div class="featureMobile">
+    <h2>PRIVATE DINING</h2>
+    <p>
+      Host an unforgettable evening with thoughtfully curated menus and a warm,
+      intimate atmosphere.
+    </p>
+    <a href="#">BOOK YOUR EVENT</a>
+  </div>
+</div>
+
+  <div class="featurePanel">
+    <h2 class="featureTitle">PRIVATE DINING</h2>
+    <p class="featureText">
+      Host an unforgettable evening with thoughtfully curated menus and a warm,
+      intimate atmosphere. Our private dining experience is designed for celebrations,
+      corporate events, and special gatherings.
+    </p>
+
+    <a class="featureBtn" href="#">BOOK YOUR EVENT</a>
+  </div>
+
+</section>
+<!-----------------------------------------------------
+      This is where the split screen ends
+------------------------------------------------------->
+
+<!-----------------------------------------------------
+        Desert Carousel starts
+------------------------------------------------------->
+        
+<section class="carouselWrap">
+    <h1>Desserts</h1>
+<div class="carousel3">
+  <button class="arrow left" data-dir="-1">&#10094;</button>
+
+<div class="track">
+
+<section class="slide">
+  <img src="images/dinerdessert_1.webp" alt="Tiramisu" loading="lazy">
+  <div class="cardContent">
+    <h3>Tiramisu</h3>
+    <p>
+      Delicate layers of espresso-soaked ladyfingers and mascarpone cream, topped with a dusting of cocoa.
+    </p>
+    <a href="#">View Dish</a>
+  </div>
+</section>
+
+<section class="slide">
+  <img src="images/dinerdessert_2.webp" alt="Panna Cotta" loading="lazy">
+  <div class="cardContent">
+    <h3>Panna Cotta</h3>
+    <p>
+      Silken vanilla cream set to perfection, served with seasonal berries and a hint of citrus glaze.
+    </p>
+    <a href="#">View Dish</a>
+  </div>
+</section>
+
+<section class="slide">
+  <img src="images/dinerdessert_3.webp" alt="Cannoli" loading="lazy">
+  <div class="cardContent">
+    <h3>Cannoli</h3>
+    <p>
+      Crisp pastry shells filled with sweet ricotta, orange zest, and chocolate, inspired by Sicilian tradition.
+    </p>
+    <a href="#">View Dish</a>
+  </div>
+</section>
+
+    <section class="slide">
+      <img src="images/dinerdessert_4.webp" alt="Pasta Dish" loading="lazy">
+      <div class="cardContent">
+        <h3>Chocolate Tart</h3>
+    <p>
+      Rich dark chocolate ganache in a delicate crust, finished with sea salt and fresh cream.
+    </p>
+    <a href="#">View Dish</a>
+      </div>
+    </section>
+  </div>
+   <button class="arrow right" data-dir="1">&#10095;</button>
+</div>
+</section>
+</section>
+<!-----------------------------------------------------
+        Dessert Carousel ends
+------------------------------------------------------->
+   <!-- <img src="images/favicon.png" alt="logo" width="40" height="40" class="footerLogo">-->
+<div id="footerWrapper">
+  <footer class="footer">
+
+    <section class="footerCol contact">
+      <h4>Contact</h4>
+    <p><ion-icon name="person-outline"></ion-icon>Silvia Moretti</p>
+<p><ion-icon name="business-outline"></ion-icon>Velombra Restaurant</p>
+      <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:dining@velombra.com">dining@velombra.com</a></p>
+      <p><ion-icon name="globe-outline"></ion-icon><a href="https://velombra.com">velombra.com</a></p>
+      <p><ion-icon name="call-outline"></ion-icon><a href="tel:555555555">555-657-5643</a></p>
+    </section>
+
+    <section class="footerCol social">
+      <h4>Follow</h4>
+      <div class="socialRow">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+
+
+      <a class="footerCta" href="#">Book a Table</a>
+    </section>
+
+    <section class="footerCol location">
+      <h4>Location</h4>
+      <address>
+        128 Via della Notte<br>
+        Los Angeles, CA<br>
+      </address>
+    
+      <p class="hours">
+        Mon–Thu 5–10pm<br>
+        Fri–Sat 5–11pm<br>
+        Sun Closed
+      </p>
+    </section>
+
+    <div class="footerBottom">
+      <p class="legal">&copy; <span id="year">x</span> • Savannah Longmore</p>
+      <div class="fineLinks">
+        <a href="#">Privacy</a>
+        <span>•</span>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+</div>
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
