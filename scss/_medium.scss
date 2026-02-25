@@ -18,12 +18,12 @@ header {
     gap: 20px;
   }
 
-  /* Slightly bigger image than mobile */
+  
   .slide img{
     height: 210px;
   }
 
-  /* Make text breathe a little more */
+  
   .slide h3{
     font-size: 1.12rem;
     margin: 16px 16px 8px;
@@ -52,19 +52,12 @@ header {
 
   .featureMobile{
     position: absolute;
-
     left: 0;
-
     right: 0;
-
     bottom: 0;
-
     z-index: 2;
-
     padding: 26px 20px;
-
     text-align: center;
-
     color: #EAE6E3;
   }
 footer {
