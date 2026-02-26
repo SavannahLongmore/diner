@@ -23,16 +23,39 @@
         <header>
             <img src="images/favicon-96x96.png" alt="logo" width="40" height="40" class="logo">
             <h1>Velombra</h1>
+            <button class="navToggle" id="navOpen" aria-controls="mobileNav" aria-expanded="false">
+  <span class="srOnly">Open menu</span>
+  &#9776;
+</button>
         </header>
+        <div class="navOverlay" id="navOverlay" hidden></div>
+
+<nav class="mobileNav" id="mobileNav" aria-hidden="true">
+  <div class="mobileNavTop">
+    <button class="navClose" id="navClose" aria-label="Close menu">&times;</button>
+  </div>
+
+  <ul class="mobileNavList">
+    <li><a href="#">Welcome</a></li>
+    <li><a href="#">Our Menu</a></li>
+    <li><a href="#">Catering</a></li>
+    <li><a href="#">Reservations</a></li>
+    <li><a href="#">Private Dining</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">Careers</a></li>
+  </ul>
+</nav>
     </div> 
     <div id="navWrapper">
         <nav>
             <ul>
                 <li class="active"><a href="#">Welcome</a></li>
-                <li><a href="#">Communities</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Floor Plans</a></li>
-                <li><a href="#">Homebuyer Guide</a></li>
+                <li><a href="#">Our Menu</a></li>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Private Dining</a></li>
+                <li><a href="#">Locations</a></li>
+                
             </ul>
         </nav>
     </div>
@@ -214,7 +237,7 @@
   <div class="cardContent">
     <h3>Tiramisu</h3>
     <p>
-      Delicate layers of espresso-soaked ladyfingers and mascarpone cream, topped with a dusting of cocoa.
+      Espresso-soaked layers of ladyfingers and mascarpone cream with a dusting of cocoa.
     </p>
     <a href="#">View Dish</a>
   </div>
@@ -236,7 +259,7 @@
   <div class="cardContent">
     <h3>Cannoli</h3>
     <p>
-      Crisp pastry shells filled with sweet ricotta, orange zest, and chocolate, inspired by Sicilian tradition.
+      Crisp pastry shells filled with sweet ricotta, orange zest, and chocolate.
     </p>
     <a href="#">View Dish</a>
   </div>

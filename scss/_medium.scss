@@ -9,10 +9,10 @@ header {
     @media (min-width: 1000px){
 
  .carousel3{
-    padding: 0 64px; /* a bit more room for arrows */
+    padding: 0 64px; 
   }
 
-  /* Show 2 cards per view */
+  /* notes: Show 2 cards per view */
   .track{
     grid-auto-columns: calc((100% - 20px) / 2);
     gap: 20px;
@@ -39,7 +39,7 @@ header {
     padding: 11px;
   }
 
-  /* Medium-sized arrows */
+  /* notes: Medium-sized arrows */
   .carousel3 .arrow{
     width: 44px;
     height: 44px;

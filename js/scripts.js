@@ -1,3 +1,40 @@
+window.addEventListener("load", () => {
+  const nav = document.getElementById("mobileNav");
+  const overlay = document.getElementById("navOverlay");
+  const openBtn = document.getElementById("navOpen");
+  const closeBtn = document.getElementById("navClose");
+
+  function openNav() {
+    nav.classList.add("isOpen");
+    nav.setAttribute("aria-hidden", "false");
+    openBtn.setAttribute("aria-expanded", "true");
+    overlay.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeNav() {
+    nav.classList.remove("isOpen");
+    nav.setAttribute("aria-hidden", "true");
+    openBtn.setAttribute("aria-expanded", "false");
+    overlay.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  openBtn.addEventListener("click", openNav);
+  closeBtn.addEventListener("click", closeNav);
+  overlay.addEventListener("click", closeNav);
+
+  // notes: Close when you tap a link
+  nav.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") closeNav();
+  });
+
+  // notes: ESC closes
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeNav();
+  });
+});
+
 window.addEventListener("load", function () {
 
   document.querySelectorAll(".carousel3").forEach((carousel) => {
